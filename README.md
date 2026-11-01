@@ -1,6 +1,6 @@
 # Echar un cable
 
-Recursos en español para familias que viven bajo control, manipulación y maltrato emocional encubierto: directorio de profesionales verificados, guía para documentar, orientación legal y, en el futuro, apoyo económico.
+Recursos en español para familias que viven bajo control, manipulación y maltrato emocional causados por problemas psicológicos poco visibles, como el **narcisismo vulnerable (encubierto)**: directorio de profesionales verificados, guía para documentar, orientación legal y, en el futuro, apoyo económico.
 
 Es una web estática (un único `index.html`), sin cookies, sin analítica y sin recursos de terceros.
 
@@ -45,7 +45,7 @@ Las solicitudes llegan como *issues* públicos de GitHub: nunca publiques ni cop
 
 ## Principios del proyecto
 
-- **Conductas, no diagnósticos.** La web no etiqueta a personas.
+- **Conductas, no diagnósticos.** La web explica qué es el narcisismo vulnerable, pero nunca etiqueta a personas concretas. Narcisismo vulnerable/grandioso es una distinción de la investigación clínica, no una categoría aparte del DSM-5 ni de la CIE-11: cualquier texto nuevo debe respetar ese matiz.
 - **Nada de exposición.** No se publican nombres ni historias identificables de terceros.
 - **Datos mínimos.** No se recoge información de quien visita la web. Los datos de salud mental son categoría especial en el RGPD: si algún día se añade un formulario o una comunidad, hay que diseñarlo con asesoramiento legal.
 
