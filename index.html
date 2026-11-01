@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Echar un cable · Ayuda para familias atrapadas en relaciones de maltrato psicológico</title>
+<meta name="description" content="Recursos en español para familias que viven bajo control, manipulación y maltrato emocional encubierto: profesionales verificados, guía para documentar y orientación legal y económica.">
+<meta name="robots" content="index,follow">
+<style>
+:root{
+  --bg:#faf7f2; --fg:#1f2a2e; --muted:#566468; --card:#ffffff; --line:#e4ddd0;
+  --accent:#1f6f78; --accent-fg:#ffffff; --accent-soft:#e3f1f2;
+  --warn:#fff3d6; --warn-line:#e0b94f; --danger:#a63a2b;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#12181b; --fg:#e8ecec; --muted:#9aa8ac; --card:#192226; --line:#2a373c;
+    --accent:#58b3bd; --accent-fg:#0d1417; --accent-soft:#1a2b2e;
+    --warn:#2b2412; --warn-line:#7a6320; --danger:#e58a7b;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;}
+a{color:var(--accent)}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.25;margin:0 0 .5em}
+h1{font-size:2.3rem}
+h2{font-size:1.6rem;margin-top:0}
+h3{font-size:1.15rem}
+section{padding:44px 0;border-top:1px solid var(--line)}
+header.hero{padding:56px 0 36px}
+header.hero p.lead{font-size:1.2rem;color:var(--muted);max-width:640px}
+nav.top{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:20px;font-size:.95rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:14px 0}
+.urgent{background:var(--warn);border:1px solid var(--warn-line);border-radius:12px;padding:18px 20px}
+.urgent h2{font-size:1.25rem;margin-bottom:.4em}
+.urgent ul{margin:.4em 0 0;padding-left:1.2em}
+.tel{font-weight:700;white-space:nowrap}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:12px 0;padding:0}
+details>summary{cursor:pointer;padding:16px 20px;font-weight:600;list-style:none}
+details>summary::-webkit-details-marker{display:none}
+details>summary::after{content:"+";float:right;color:var(--accent);font-size:1.3rem;line-height:1}
+details[open]>summary::after{content:"–"}
+details>div{padding:0 20px 16px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:640px){.cols{grid-template-columns:1fr} h1{font-size:1.9rem}}
+.do{border-left:4px solid var(--accent)}
+.dont{border-left:4px solid var(--danger)}
+ul.tight{margin:.4em 0;padding-left:1.2em}
+ul.tight li{margin:.3em 0}
+button,.btn{font:inherit;background:var(--accent);color:var(--accent-fg);border:0;border-radius:8px;
+  padding:10px 16px;cursor:pointer;text-decoration:none;display:inline-block}
+button.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+pre{background:var(--accent-soft);border-radius:10px;padding:14px 16px;overflow:auto;
+  font:.92rem/1.55 ui-monospace,Menlo,Consolas,monospace;white-space:pre-wrap}
+.filters{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:end;margin:14px 0}
+.filters label{display:flex;flex-direction:column;font-size:.85rem;color:var(--muted);gap:4px}
+.filters select,.filters input[type=text]{font:inherit;padding:8px 10px;border-radius:8px;
+  border:1px solid var(--line);background:var(--card);color:var(--fg)}
+.filters label.check{flex-direction:row;align-items:center;gap:8px;color:var(--fg);font-size:.95rem}
+.tag{display:inline-block;font-size:.8rem;background:var(--accent-soft);color:var(--accent);
+  border-radius:20px;padding:2px 10px;margin-right:6px}
+.empty{color:var(--muted)}
+.small{font-size:.9rem;color:var(--muted)}
+#salida{position:fixed;top:12px;right:12px;z-index:50;background:var(--danger);color:#fff;
+  padding:8px 14px;border-radius:8px;font-size:.9rem;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+footer{padding:36px 0 60px;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+
+<button id="salida" type="button" aria-label="Salida rápida: abandonar esta página ahora">Salida rápida ✕</button>
+
+<header class="hero">
+<div class="wrap">
+  <h1>Echar un cable</h1>
+  <p class="lead">Recursos en español para familias que viven bajo control, manipulación y maltrato emocional encubierto, y que necesitan profesionales cualificados, orientación legal y apoyo para salir de ahí.</p>
+  <p>Si estás aquí, probablemente llevas mucho tiempo aguantando y estás agotado. No tienes que resolverlo todo hoy. Empieza por la parte que más urge.</p>
+  <nav class="top" aria-label="Secciones">
+    <a href="#urgente">Ayuda urgente</a>
+    <a href="#empezar">Por dónde empezar</a>
+    <a href="#documentar">Cómo documentar</a>
+    <a href="#directorio">Profesionales</a>
+    <a href="#dinero">Apoyo económico</a>
+    <a href="#profesionales">Soy profesional</a>
+    <a href="#limites">Qué es y qué no es</a>
+  </nav>
+</div>
+</header>
+
+<main class="wrap">
+
+<section id="urgente" style="border-top:0;padding-top:0">
+  <div class="urgent">
+    <h2>Si hay peligro ahora mismo</h2>
+    <ul>
+      <li><strong>Emergencia o riesgo físico:</strong> <span class="tel">112</span></li>
+      <li><strong>Niños y adolescentes (Fundación ANAR, también orienta a familias):</strong> <span class="tel">900 20 20 10</span></li>
+      <li><strong>Pensamientos de hacerte daño o de morir (línea de conducta suicida):</strong> <span class="tel">024</span></li>
+      <li><strong>Escuchar y desahogarte con alguien (Teléfono de la Esperanza):</strong> <span class="tel">717 003 717</span></li>
+    </ul>
+    <p class="small" style="margin-bottom:0">Si te preocupa que alguien revise tu móvil u ordenador, usa el botón «Salida rápida» y borra después el historial del navegador.</p>
+  </div>
+</section>
+
+<section id="empezar">
+  <h2>Por dónde empezar</h2>
+  <p>No hace falta saber ponerle nombre a lo que ocurre. Elige lo que más necesitas ahora.</p>
+
+  <details>
+    <summary>Necesito entender qué está pasando</summary>
+    <div>
+      <p>Vivir con alguien que controla, manipula, culpabiliza y cambia de versión una y otra vez desgasta hasta hacerte dudar de ti mismo. Eso es real y tiene consecuencias, aunque nadie más lo vea.</p>
+      <p>Dos ideas que ayudan:</p>
+      <ul class="tight">
+        <li><strong>Describe conductas, no diagnósticos.</strong> Un diagnóstico solo puede darlo un profesional que evalúe a la persona, y no se puede hacer a distancia ni desde fuera. Escribir «hace X, dice Y, ocurre Z» es más útil, más honesto y mucho más sólido ante un juez que escribir «es narcisista» o «es borderline».</li>
+        <li><strong>Tú puedes pedir ayuda sin que ella cambie.</strong> Un terapeuta con experiencia en abuso emocional, control coercitivo o relaciones de alta conflictividad puede ayudarte a entender lo que vives, a protegerte y a proteger a tus hijos, aunque la otra persona no acepte ser evaluada.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>Necesito terapia para mí o para mis hijos</summary>
+    <div>
+      <ul class="tight">
+        <li><strong>Vía pública:</strong> tu médico de cabecera puede derivarte a salud mental. Es lenta, pero es gratuita. Para menores, el pediatra o el orientador del colegio pueden abrir la puerta.</li>
+        <li><strong>Vía privada:</strong> busca en el <a href="#directorio">directorio</a>. Pregunta directamente por su experiencia con maltrato emocional y dinámicas familiares de control, y pide que te expliquen cómo trabajan.</li>
+        <li><strong>Atención con los menores:</strong> la terapia psicológica de un menor puede requerir el consentimiento de ambos progenitores. Consúltalo con tu abogado antes de empezar, para que no se use en tu contra.</li>
+        <li>Si tu situación termina en un proceso judicial, conviene distinguir al terapeuta que te acompaña del perito que emite un informe. No suelen ser la misma persona.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>Necesito orientación legal o un peritaje</summary>
+    <div>
+      <ul class="tight">
+        <li>Busca un <strong>abogado de familia</strong> con experiencia en violencia psicológica y en procesos de guarda y custodia. Cuéntale tu situación con hechos y fechas.</li>
+        <li><strong>Justicia gratuita:</strong> si tus ingresos están por debajo de los límites, puedes solicitar abogado de oficio. Y el <em>Servicio de Orientación Jurídica</em> de tu Colegio de Abogados ofrece una primera consulta gratuita o muy económica en la mayoría de ciudades.</li>
+        <li><strong>Peritaje psicológico o psiquiátrico forense:</strong> es un informe técnico elaborado por un profesional especializado, que puede encargar una parte o pedir el juzgado. Es una herramienta potente, pero decide tu abogado si conviene y en qué momento.</li>
+        <li>Los servicios sociales municipales y los equipos psicosociales de los juzgados también intervienen en algunos casos, sobre todo cuando hay menores.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>Necesito documentar y no tengo fuerzas</summary>
+    <div>
+      <p>Es muy habitual. Mira la <a href="#documentar">guía de documentación</a>: está pensada para hacerse en cinco minutos y estando agotado. Y en el <a href="#directorio">directorio</a> hay una categoría de profesionales que pueden ayudarte a ordenar y estructurar el archivo.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Necesito ayuda económica</summary>
+    <div>
+      <p>Mira la sección de <a href="#dinero">apoyo económico</a>. Todavía está en construcción, pero ya recoge las vías públicas a las que puedes acudir.</p>
+    </div>
+  </details>
+</section>
+
+<section id="documentar">
+  <h2>Cómo documentar, aunque estés agotado</h2>
+  <p>Documentar no significa montar un caso contra nadie: significa tener una memoria fiable cuando la tuya y la de los demás se llenen de ruido. Lo importante es la <strong>constancia</strong> más que el detalle perfecto.</p>
+
+  <h3>Principios</h3>
+  <ul class="tight">
+    <li><strong>Hechos antes que interpretaciones.</strong> «El martes 14, a las 21:30, me dijo que si me iba no vería a los niños» pesa más que «me amenazó, es una manipuladora».</li>
+    <li><strong>Poco, pero a menudo.</strong> Una nota de un minuto justo después del episodio vale más que un informe perfecto que nunca escribes.</li>
+    <li><strong>Copias seguras.</strong> Lo que guardes tiene que estar donde ella no pueda verlo ni borrarlo.</li>
+  </ul>
+
+  <h3>Qué guardar</h3>
+  <ul class="tight">
+    <li><strong>Un diario de episodios</strong> (plantilla abajo).</li>
+    <li><strong>Mensajes y correos que recibes</strong>, con capturas donde se vean fecha, hora y contacto, y además exporta la conversación completa.</li>
+    <li><strong>Informes</strong> médicos, psicológicos y escolares (tutor, orientador) que reflejen el impacto en ti o en los niños.</li>
+    <li><strong>Movimientos bancarios</strong>, deudas, cambios de cuentas y gastos relevantes.</li>
+    <li><strong>Testigos:</strong> nombre, relación contigo y qué presenciaron y cuándo.</li>
+    <li><strong>Cualquier contacto</strong> con servicios sociales, colegio, médicos, policía u otros organismos.</li>
+  </ul>
+
+  <h3>Plantilla para el diario</h3>
+  <p class="small">Cinco líneas bastan. También puedes dictarlo en una nota de voz de un minuto y transcribirlo después.</p>
+  <pre id="plantilla">FECHA Y HORA:
+LUGAR / QUIÉN ESTABA:
+QUÉ PASÓ (hechos, lo que se dijo o hizo, sin interpretar):
+EFECTO EN LOS NIÑOS (si estaban presentes o lo notaron):
+QUÉ HICE YO / A QUIÉN LO CONTÉ:</pre>
+  <button type="button" id="copiar" class="ghost">Copiar plantilla</button>
+
+  <h3 style="margin-top:28px">Dónde guardarlo</h3>
+  <ul class="tight">
+    <li>En una cuenta nueva (correo y nube) con una contraseña que solo conozcas tú y verificación en dos pasos en tu propio móvil.</li>
+    <li>Una copia extra en un pendrive guardado fuera de casa o con una persona de confianza.</li>
+    <li>Nunca en un ordenador, tableta o nube compartidos con ella.</li>
+  </ul>
+
+  <div class="cols">
+    <div class="card do">
+      <h3>Sí</h3>
+      <ul class="tight">
+        <li>Guardar lo que tú mismo recibes o presencias.</li>
+        <li>Pedir a un profesional (abogado, trabajador social, psicólogo forense) que te ayude a ordenarlo.</li>
+        <li>Consultar con tu abogado las herramientas formales: acta notarial, burofax, informe pericial, parte de lesiones o informe médico.</li>
+      </ul>
+    </div>
+    <div class="card dont">
+      <h3>No</h3>
+      <ul class="tight">
+        <li>Entrar en su móvil, correo o cuentas, instalar programas espía o abrir su correspondencia. Puede ser delito (revelación de secretos) y hundiría tu caso.</li>
+        <li>Usar a los niños como mensajeros, interrogarlos, grabarlos o ponerlos de testigos.</li>
+        <li>Publicar acusaciones en redes o contarlas a terceros: puede suponer injurias o calumnias.</li>
+        <li>Etiquetar con diagnósticos en tus escritos.</li>
+        <li>Borrar nada, aunque te perjudique.</li>
+        <li>Grabar conversaciones sin preguntar antes a tu abogado.</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small">Esta guía es orientativa y no sustituye el consejo de un abogado: las reglas cambian según el caso y la comunidad.</p>
+</section>
+
+<section id="directorio">
+  <h2>Directorio de profesionales</h2>
+  <p>Profesionales que se han ofrecido a trabajar con estos casos y cuya colegiación hemos comprobado. Filtra por lo que necesitas.</p>
+
+  <div class="filters" role="search">
+    <label>Tipo de ayuda
+      <select id="f-tipo"></select>
+    </label>
+    <label>Modalidad
+      <select id="f-modalidad">
+        <option value="">Cualquiera</option>
+        <option value="online">Online</option>
+        <option value="presencial">Presencial</option>
+      </select>
+    </label>
+    <label>Ciudad o provincia
+      <input type="text" id="f-ciudad" placeholder="p. ej. Madrid">
+    </label>
+    <label class="check"><input type="checkbox" id="f-social"> Con tarifa o plazas solidarias</label>
+  </div>
+
+  <div id="lista" aria-live="polite"></div>
+</section>
+
+<section id="dinero">
+  <h2>Apoyo económico</h2>
+  <p><strong>Esta parte está en construcción.</strong> No recogemos dinero de nadie hasta que exista una entidad legalmente constituida que lo gestione con transparencia. Mientras tanto, estas son las vías reales:</p>
+  <ul class="tight">
+    <li><strong>Asistencia jurídica gratuita</strong> si cumples los requisitos de ingresos, y orientación jurídica gratuita en tu Colegio de Abogados.</li>
+    <li><strong>Salud mental pública</strong> a través de tu médico de cabecera.</li>
+    <li><strong>Servicios sociales municipales</strong>, que pueden orientarte sobre ayudas, sobre todo si hay menores.</li>
+    <li><strong>Plazas solidarias:</strong> profesionales del directorio que ofrecen sesiones a tarifa reducida o gratuitas. Cuando alguien se registre con esta opción, aparecerá marcado en el directorio.</li>
+  </ul>
+  <p>Lo que queremos construir: un fondo de ayuda para costear terapia, peritajes y apoyo para documentar a familias que no pueden permitírselo. Si tienes experiencia montando asociaciones o fundaciones, o quieres colaborar, <a id="link-colaborar" href="#">escríbenos</a>.</p>
+</section>
+
+<section id="profesionales">
+  <h2>Soy profesional y quiero ayudar</h2>
+  <p>Buscamos psicólogos, psiquiatras, peritos forenses, abogados de familia, trabajadores sociales y personas con formación para ayudar a ordenar documentación. Para aparecer en el directorio pedimos:</p>
+  <ul class="tight">
+    <li><strong>Colegiación vigente</strong>, que comprobaremos con tu colegio profesional.</li>
+    <li><strong>Experiencia real</strong> con maltrato emocional, control coercitivo o conflicto familiar de alta intensidad.</li>
+    <li><strong>Compromiso ético:</strong> secreto profesional, no diagnosticar a personas que no hayas evaluado, no prometer resultados judiciales y no captar clientes aprovechando su desesperación.</li>
+    <li>Indicar si ofreces <strong>plazas o tarifa solidarias</strong>.</li>
+  </ul>
+  <p><a class="btn" id="link-alta" href="#">Solicitar alta como profesional</a></p>
+  <p class="small">Las solicitudes se envían a través de GitHub y son públicas. Incluye solo los datos profesionales que quieras que aparezcan en el directorio.</p>
+</section>
+
+<section id="limites">
+  <h2>Qué es y qué no es este proyecto</h2>
+  <div class="cols">
+    <div class="card do">
+      <h3>Es</h3>
+      <ul class="tight">
+        <li>Un lugar para encontrar profesionales y recursos en español.</li>
+        <li>Un apoyo para familias de cualquier composición: hombres, mujeres, hijos y otros familiares.</li>
+        <li>Un proyecto abierto y gratuito, sin publicidad.</li>
+      </ul>
+    </div>
+    <div class="card dont">
+      <h3>No es</h3>
+      <ul class="tight">
+        <li>Un servicio de diagnóstico: aquí no se etiqueta a nadie.</li>
+        <li>Un sustituto de la ayuda profesional, legal ni sanitaria.</li>
+        <li>Un lugar para exponer o acosar a personas concretas. No se publican nombres ni historias identificables.</li>
+      </ul>
+    </div>
+  </div>
+  <p><strong>Privacidad:</strong> esta página no usa cookies, ni analítica, ni guarda nada en tu dispositivo, ni carga recursos de terceros. No te pedimos datos personales. Solo los enlaces a GitHub salen de esta página.</p>
+</section>
+
+</main>
+
+<footer>
+<div class="wrap">
+  Proyecto abierto, bajo licencia MIT. Código y contribuciones en <a id="link-repo" href="#">GitHub</a>.
+  La información de esta web es orientativa y no constituye asesoramiento médico, psicológico ni jurídico.
+</div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  // ----- Configuración -----
+  var REPO = "enderHugin/help";
+  var REPO_URL = "https://github.com/" + REPO;
+
+  // ----- Directorio -----
+  // Cada profesional es un objeto. Solo añade a quien hayas verificado.
+  // {
+  //   nombre: "Nombre y apellidos",
+  //   tipo: "clinica" | "psiquiatria" | "forense" | "abogacia" | "social" | "documentacion",
+  //   colegiado: "Nº 12345 · COP Madrid",
+  //   ciudad: "Madrid",
+  //   modalidad: ["online", "presencial"],
+  //   solidaria: true | false,
+  //   contacto: "https://... o correo",
+  //   nota: "Experiencia o enfoque, una o dos frases."
+  // }
+  var PROFESIONALES = [];
+
+  var TIPOS = {
+    clinica: "Psicología clínica",
+    psiquiatria: "Psiquiatría",
+    forense: "Peritaje psicológico o psiquiátrico forense",
+    abogacia: "Abogacía de familia",
+    social: "Trabajo social",
+    documentacion: "Documentación y organización de pruebas"
+  };
+
+  function $(id) { return document.getElementById(id); }
+
+  // Enlaces a GitHub
+  function issueUrl(title, body) {
+    return REPO_URL + "/issues/new?title=" + encodeURIComponent(title) +
+      "&body=" + encodeURIComponent(body);
+  }
+  $("link-repo").href = REPO_URL;
+  $("link-alta").href = issueUrl(
+    "Alta de profesional",
+    "Nombre profesional:\nTipo (psicología clínica / psiquiatría / forense / abogacía de familia / trabajo social / documentación):\nNº de colegiado y colegio:\nCiudad y modalidad (online / presencial):\n¿Ofreces plazas o tarifa solidarias?:\nContacto profesional que puede publicarse:\nExperiencia con maltrato emocional o conflicto familiar:\n\n(Esta solicitud es pública: no incluyas datos personales de pacientes ni de familias.)"
+  );
+  $("link-colaborar").href = issueUrl(
+    "Quiero colaborar",
+    "Cuéntanos cómo te gustaría ayudar (fondo de ayuda, asociación, difusión, voluntariado...).\n\n(Esta solicitud es pública: no incluyas datos personales.)"
+  );
+
+  // Salida rápida
+  function salir() { window.location.replace("https://www.google.es"); }
+  $("salida").addEventListener("click", salir);
+  var escCount = 0, escTimer = null;
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "Escape") return;
+    escCount++;
+    clearTimeout(escTimer);
+    escTimer = setTimeout(function () { escCount = 0; }, 800);
+    if (escCount >= 2) salir();
+  });
+
+  // Copiar plantilla
+  $("copiar").addEventListener("click", function () {
+    var btn = this;
+    var texto = $("plantilla").textContent;
+    function ok() { btn.textContent = "Copiada ✓"; setTimeout(function () { btn.textContent = "Copiar plantilla"; }, 2000); }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(texto).then(ok, function () {});
+    } else {
+      var r = document.createRange(); r.selectNodeContents($("plantilla"));
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+    }
+  });
+
+  // Filtros del directorio
+  var selTipo = $("f-tipo");
+  var optAll = document.createElement("option");
+  optAll.value = ""; optAll.textContent = "Cualquiera";
+  selTipo.appendChild(optAll);
+  Object.keys(TIPOS).forEach(function (k) {
+    var o = document.createElement("option");
+    o.value = k; o.textContent = TIPOS[k];
+    selTipo.appendChild(o);
+  });
+
+  function norm(s) {
+    return String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+  }
+
+  function safeLink(c) {
+    c = String(c || "").trim();
+    if (/^https?:\/\//i.test(c)) return c;
+    if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(c)) return "mailto:" + c;
+    return null;
+  }
+
+  function tarjeta(p) {
+    var d = document.createElement("div");
+    d.className = "card";
+    var h = document.createElement("h3");
+    h.textContent = p.nombre;
+    d.appendChild(h);
+
+    var tags = document.createElement("p");
+    var t1 = document.createElement("span");
+    t1.className = "tag"; t1.textContent = TIPOS[p.tipo] || p.tipo;
+    tags.appendChild(t1);
+    (p.modalidad || []).forEach(function (m) {
+      var t = document.createElement("span");
+      t.className = "tag"; t.textContent = m === "online" ? "Online" : "Presencial";
+      tags.appendChild(t);
+    });
+    if (p.solidaria) {
+      var ts = document.createElement("span");
+      ts.className = "tag"; ts.textContent = "Plazas solidarias";
+      tags.appendChild(ts);
+    }
+    d.appendChild(tags);
+
+    var meta = document.createElement("p");
+    meta.className = "small";
+    meta.textContent = [p.colegiado, p.ciudad].filter(Boolean).join(" · ");
+    d.appendChild(meta);
+
+    if (p.nota) {
+      var n = document.createElement("p");
+      n.textContent = p.nota;
+      d.appendChild(n);
+    }
+    var href = safeLink(p.contacto);
+    if (href) {
+      var a = document.createElement("a");
+      a.href = href; a.textContent = "Contactar";
+      a.rel = "noopener noreferrer"; a.target = "_blank";
+      d.appendChild(a);
+    }
+    return d;
+  }
+
+  function render() {
+    var tipo = selTipo.value;
+    var mod = $("f-modalidad").value;
+    var ciudad = norm($("f-ciudad").value.trim());
+    var social = $("f-social").checked;
+    var lista = $("lista");
+    lista.textContent = "";
+
+    var res = PROFESIONALES.filter(function (p) {
+      if (tipo && p.tipo !== tipo) return false;
+      if (mod && (p.modalidad || []).indexOf(mod) === -1) return false;
+      if (ciudad && norm(p.ciudad).indexOf(ciudad) === -1) return false;
+      if (social && !p.solidaria) return false;
+      return true;
+    });
+
+    if (!PROFESIONALES.length) {
+      var e = document.createElement("div");
+      e.className = "card empty";
+      e.innerHTML = "<strong>Aún no hay profesionales verificados.</strong> Estamos empezando. " +
+        "Si eres profesional, puedes <a href=\"#profesionales\">solicitar el alta</a>.";
+      lista.appendChild(e);
+    } else if (!res.length) {
+      var e2 = document.createElement("p");
+      e2.className = "empty";
+      e2.textContent = "Ningún resultado con esos filtros. Prueba a quitar alguno.";
+      lista.appendChild(e2);
+    } else {
+      res.forEach(function (p) { lista.appendChild(tarjeta(p)); });
+    }
+  }
+
+  ["f-tipo", "f-modalidad", "f-ciudad", "f-social"].forEach(function (id) {
+    $(id).addEventListener("input", render);
+    $(id).addEventListener("change", render);
+  });
+  render();
+})();
+</script>
+</body>
+</html>
