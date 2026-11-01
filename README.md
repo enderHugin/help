@@ -1,4 +1,4 @@
-# Echar un cable
+# Aguanta. Te echamos un cable.
 
 Recursos en español para familias que viven bajo control, manipulación y maltrato emocional causados por problemas psicológicos poco visibles, como el **narcisismo vulnerable (encubierto)**: directorio de profesionales verificados, guía para documentar, orientación legal y, en el futuro, apoyo económico.
 
