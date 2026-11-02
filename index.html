@@ -72,7 +72,7 @@ footer{padding:36px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
 </head>
 <body>
 
-<button id="salida" type="button" aria-label="Salida rápida: abandonar esta página ahora">Salida rápida ✕</button>
+<button id="salida" type="button" aria-label="Salida rápida: abandonar esta página ahora. También con la tecla Escape." title="Pulsa Esc para salir al instante">Salida rápida (Esc) ✕</button>
 
 <header class="hero">
 <div class="wrap">
@@ -103,7 +103,7 @@ footer{padding:36px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
       <li><strong>Pensamientos de hacerte daño o de morir (línea de conducta suicida):</strong> <span class="tel">024</span></li>
       <li><strong>Escuchar y desahogarte con alguien (Teléfono de la Esperanza):</strong> <span class="tel">717 003 717</span></li>
     </ul>
-    <p class="small" style="margin-bottom:0">Si te preocupa que alguien revise tu móvil u ordenador, usa el botón «Salida rápida» y borra después el historial del navegador.</p>
+    <p class="small" style="margin-bottom:0">Si te preocupa que alguien revise tu móvil u ordenador, usa el botón «Salida rápida» o pulsa la tecla Esc, y borra después el historial del navegador.</p>
   </div>
 </section>
 
@@ -392,13 +392,8 @@ QUÉ HICE YO / A QUIÉN LO CONTÉ:</pre>
   // Salida rápida
   function salir() { window.location.replace("https://www.google.es"); }
   $("salida").addEventListener("click", salir);
-  var escCount = 0, escTimer = null;
   document.addEventListener("keydown", function (e) {
-    if (e.key !== "Escape") return;
-    escCount++;
-    clearTimeout(escTimer);
-    escTimer = setTimeout(function () { escCount = 0; }, 800);
-    if (escCount >= 2) salir();
+    if (e.key === "Escape" || e.key === "Esc") salir();
   });
 
   // Copiar plantilla
